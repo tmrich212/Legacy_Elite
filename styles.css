@@ -1,0 +1,478 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Nav Section */
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 64px;
+}
+
+.navbar_toggle{
+    display: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li a {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    border-radius: 5px;
+    color: rgb(250, 194, 90);
+}
+
+a h1 {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    letter-spacing: 4px;
+    cursor: pointer;
+    font-size: 45px;
+    text-decoration: none;
+    color: black;
+}
+
+.home h1 {
+    text-decoration: none;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+.home {
+    text-decoration: none;
+}
+
+.nav_mobile {
+    display: none;
+}
+
+h1 span {
+    /* color: rgba(255, 172, 94, 0.747); */
+    color: rgb(250, 194, 90);
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+.highlight {
+    border: black 2px solid;
+}
+
+/* MOBILE NAV */
+
+@media screen and (min-width: 375px) and (max-width: 700px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar_container {
+        width: 100vw;
+        position: fixed;
+    }
+
+    .nav_links {
+        display: none
+    }
+    
+    a h1 {
+        font-size: xx-large;
+    }
+
+    .home {
+        display: none;
+       
+    }
+
+    .nav_mobile  {
+        display: inline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    
+        /* padding: 8px; */
+    }
+
+    #mobile {
+        font-family: 'Zen Tokyo Zoo', cursive;
+    }
+
+    .nav_links a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        /* padding: 8px; */
+    }
+
+    /* NEW */
+    /* .navbar_toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease;
+        background: black;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar_toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+   }
+
+   #mobile-menu.is-active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+   }
+   #mobile-menu.is-active .bar:nth-child(4){
+      transform: translateY(-8px) rotate(-45deg);
+   } */
+}
+
+
+/* Main section */
+
+.main_container {
+    height: 100vh;
+    display: inline;
+}
+
+.main{
+    /* background-color: rgb(250, 194, 90); */
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1 {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 52px;
+}
+
+.main h3 {
+    /* color: white; */
+    color: rgb(250, 194, 90);
+    font-size: 22px;
+}
+
+/* MAIN MOBILE */
+@media screen and (min-width: 375px) and (max-width: 700px){
+    .main_container {
+        text-align: center;
+        width: 100vw;
+    }
+
+    .main img {
+        height: 375px;
+        overflow: hidden;
+    }
+
+    .main h1 {
+        padding: 0px 30px;
+        font-size: 40px;
+        padding-bottom: 15px;
+    }
+
+    .main h3 {
+        font-size: 18px;
+        padding: 25px;
+    }
+}
+
+/* About Section */
+.about_container {
+    height: 70vh;
+    /* background-color: rgb(230, 230, 230); */
+    padding: 32px 50px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center;  */
+}
+
+.about_me {
+    display: flex;
+}
+
+.about_me h1 {
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.about_me p {
+    line-height: 25px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.about_me li {
+    text-indent: 15px;
+    /* font-size: 20px; */
+}
+
+.jai p {
+    padding-right: 20px;
+}
+
+/* ABOUT MOBILE */
+@media screen and (min-width: 375px) and (max-width: 700px){
+    .about_container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 25px; */
+    }
+
+    .about_me {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jai {
+        text-align: center;
+    }
+
+    .jai h1 {
+        font-size: x-large;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jai p {
+        font-size: 16px;
+    }
+
+    .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+        
+    }
+
+    img {
+        height: 250px;
+    }
+}
+
+/* Offerings */
+
+.offerings {
+    padding: 32px 24px;
+    height: 90vh;
+    background-color: rgb(230, 230, 230);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offerings h1 {
+    padding-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.offerings p {
+    line-height: 25px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+/* .renovations {
+    display: flex;
+    
+} */
+
+.offerings li {
+    text-indent: 25px;
+    font-size: 20px;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* OFFERINGS MOBILE */
+@media screen and (min-width: 375px) and (max-width: 700px){
+    .offerings {
+        text-align: center;
+        padding: 25px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offerings h1 {
+        font-size: 25px;
+    }
+
+    .offerings p {
+        padding: 15px 0;
+        font-size: 18px;
+    }
+
+    .offerings li {
+        font-size: 18px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+}
+
+
+/* Work Section */
+
+.work_container {
+    height: 70vh;
+    padding: 32px 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(230, 230, 230); */
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work h1 {
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: xx-large;
+}
+
+
+.work p {
+    line-height: 25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.btn {
+    /* outline: none; */
+    border: none;
+    margin: 15px;
+    padding: 20px 55px;
+    background-color: rgb(250, 194, 90);
+}
+
+.btn a {
+    cursor: pointer;
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+}
+
+/* WORK MOBILE */
+@media screen and (min-width: 375px) and (max-width: 700px){
+    .work_container {
+        height: 70vh;
+        width: 100vw;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work h1 {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .btn button {
+        font-size: 14px;
+    }
+}
+
+/* Footer Section */
+footer {
+    height: 30vh;
+    width: 100vw;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* padding: 25px; */
+}
+
+footer p {
+    padding: 10px;
+    /* margin-bottom: 15px; */
+}
+
+footer i {
+    color: white;
+}
+
+.social_icons {
+    padding-top: 10px;
+    /* margin: 15px; */
+}
+
+@media screen and (min-width: 375px) and (max-width: 700px){
+    footer {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    footer p {
+        font-size: smaller;
+        padding: 10px;
+    }
+} 
