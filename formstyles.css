@@ -232,14 +232,15 @@ footer {
     background: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     color: white;
+    padding-bottom: 20px;
     /* padding: 45px; */
 }
 
 footer p {
-    padding: 20px;
+    padding: 10px;
     /* margin-bottom: 15px; */
 }
 
